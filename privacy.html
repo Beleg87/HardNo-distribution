@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>HardNo privacy policy</title><style>body{font:1rem/1.6 system-ui;max-width:76ch;margin:2rem auto;padding:0 1rem}pre{white-space:pre-wrap;overflow-wrap:anywhere}code{overflow-wrap:anywhere}nav a{margin-right:1rem}</style></head><body><nav><a href="index.html">Release</a><a href="privacy.html">Privacy</a><a href="notices.html">Notices</a></nav><main><h1>HardNo privacy policy</h1><p>HardNo sends no automatic telemetry. When you start the optional request log for a selected tab, it keeps host, request type and outcome in session memory. It excludes paths, queries, headers and bodies. Stopping the log, closing the tab or restarting the browser clears it.</p><pre># HardNo privacy policy
+
+HN! processes page content locally. There is no account, analytics, telemetry or
+developer backend. It does not upload browsing history, page content, request
+URLs, cookies or sign-in information.
+
+Automatic filter-data updates are on by default, with a configurable interval
+(default daily; Chrome sleep/closure may delay checks). HN! downloads selected
+public catalogue text from AdGuard, EasyList, uAssets, Frellwit&#39;s Swedish Filter
+and Peter Lowe, and any HTTPS subscriptions you explicitly add. These downloads
+omit credentials and referrers. The provider sees ordinary connection information,
+such as IP address, not a browsing-history report. Source URLs and retained hashes
+are visible in the catalogue. Local-file imports make no provider request.
+Failed or corrupt updates retain last-good data and show verification failure.
+New functions, arguments and executable scopes require a bundled release;
+downloaded JavaScript never runs. No remote HN! account/backend is provided.
+
+Own-site cookies and covered storage are allowed by default on all websites.
+Chrome&#39;s native third-party cookie blocking remains enabled; Chrome exceptions,
+partitioning and Storage Access API behavior apply. Own-site data may include
+analytics/tracking data as well as authentication. Known ad/tracker requests are
+filtered independently, without guaranteeing classification of every request.
+In particular, the default policy can allow browser-partitioned third-party
+cookies and localStorage isolated by top-level site. It does not promise to deny
+every third-party storage API. An explicit provider block or Block all also
+restricts partitioned storage. Reset returns to the browser-compatible default;
+no new provider allowance is created. Existing data is blocked, not erased.
+
+The explicit BankID policy allows HTTPS bankid.no and its subdomains to use
+covered storage across HTTPS websites while enabled. This persistent provider
+exception is not limited to a detected login transaction. It may permit additional
+BankID data. It can be disabled globally or blocked for a site; Block all overrides
+it. HN! never enters identity information or approves BankID authentication.
+
+Other provider exceptions require a popup choice. HN! inspects the current tab&#39;s
+frame URLs locally to offer embedded HTTPS origins; it does not certify them as
+identity services. Manual HTTPS provider input is also supported. Paths, queries,
+fragments and tokens are discarded; only provider/site origins (including port)
+are saved. BankID addresses are canonicalized to its documented provider policy.
+These choices allow storage, never consent or request-filter bypass. Use default
+removes a saved decision and reapplies the general site/BankID policy. Saved
+decisions share a bounded collection; an existing allowance can be revoked at
+capacity without sacrificing another decision. An explicit
+Allow all here setting is wider and permits covered data for that top-level
+hostname and its frames. Block here revokes a provider exception on a site.
+
+Local extension storage holds preferences, storage rules, provider/site choices,
+public filter snapshots/staging and update status. Legacy preference/rule records
+may remain after migration, but do not drive current defaults. Unlimited storage
+allows filter caches to coexist during safe updates. Temporary session storage
+holds bounded tab/frame observations: hostname, document ID, status, refusal label,
+short explanation and timestamp. They clear on navigation/tab close and session
+clearing. There is no retained browsing-history log. Preferences are not synced.
+
+GPC is on by default with global protection. The Sec-GPC header and page navigator
+value express a do-not-sell-or-share preference; they do not accept consent or
+guarantee a site&#39;s compliance. Reload tabs after changing it. Worker coverage is
+not claimed. A site&#39;s filtering pause does not disable the signal.
+
+Page tools query Chrome&#39;s matched rule IDs/actions only when requested. Chrome
+does not supply request URLs through this API. No result history is saved.
+Temporary exceptions retain the user-reviewed HTTPS hostname, port, path and
+resource type in session storage, without query/fragment. They allow requests for
+that target in one tab and expire on cross-origin navigation, close or restart.
+Such an endpoint may receive tracking data. Picker previews/tokens are temporary;
+saved site-specific CSS paths persist as preferences and can reveal page structure.
+Explicit local profiling may show selectors and timings, but is not continuous
+telemetry and is excluded from shared diagnostics and settings backups.
+
+Settings backup schema 3 includes persistent workspace/filter choices, custom text
+subscriptions/rules, privacy switches, site/provider decisions, GPC and saved hiding rules. These files can reveal sites you use; keep them private. Restoring is
+explicit and reviewed and replaces saved preferences, with one previous recovery
+copy kept in local extension storage. Recovery copies are not synced or uploaded.
+Neither backups nor recovery contain browser cookies, credentials or page content.
+
+Diagnostics are generated locally and include versions, enforcement flags and
+stable issue codes. The current hostname is excluded unless explicitly selected.
+URL paths/queries/tokens, provider choices, raw errors, page observations, cookies
+and credentials are excluded. Copying/downloading is an explicit action; HN!
+never sends the report. Your clipboard or chosen download destination may retain
+what you copy/save. Reloading HN! preserves preferences and can save a recovery
+copy first; it does not fetch executable code or publish this extension.
+
+Existing site data is not deleted. Allowing data or disabling protection can
+expose old data again. Global off/removal releases HN!&#39;s browser settings; other
+browser/extension settings act independently. Incognito is opt-in through Chrome. Split private contexts inherit protection
+but retain site/provider/hiding choices and observations only for the private
+session. Local/sync extension storage is shared by Chrome; HN! uses explicit
+session namespaces and context owners. A nonce-only regular/private cookie-refresh
+acknowledgement carries no site, provider or cookie information. Private sessions
+cannot alter shared network data or persistent global settings.
+
+Consent handling never clicks acceptance. Explicit refusal may trigger ordinary
+website refusal requests. The local TCF adapter does not write a consent string
+or submit acceptance. Cosmetic filtering uses reversible local CSS and supported
+procedural matching, AdGuard ExtendedCss and locally bundled ad-removal scriptlets.
+Executable scriptlets (including arguments and domain/path scope) ship with the
+extension; downloaded data cannot add executable code. Consent/storage setters,
+automatic acceptance/click scriptlets are excluded. Optional annoyance subscriptions
+apply the same action-specific policy; disappearing notices do not establish refusal. No login
+requests are replayed or credentials submitted.
+
+The VGTV fallback uses only a page-supplied unsigned public media URL with anonymous
+cross-origin loading. It does not fetch metadata, guess URLs, emulate storage or
+permit cookies. Playback requests the page-supplied media CDN.
+
+Permissions:
+- Host access: inspect ad/consent elements and frames, apply request filtering,
+  and send the GPC header on HTTP(S) and WebSocket handshakes.
+- storage/unlimitedStorage: local preferences, observations and filter caches.
+- contentSettings: cookies and covered site storage.
+- privacy: maintain native third-party cookie blocking and read effective control.
+- webNavigation: read current frame origins for optional provider/site controls.
+  No navigation history is recorded or sent.
+- declarativeNetRequest: request rules.
+- scripting: publisher adapters, locally bundled ad-removal scriptlets and USER-origin CSS.
+- alarms: filter-check scheduling.
+- activeTab: user-initiated matched-rule inspection for the selected tab.
+
+HN! cannot conceal the initial request from its serving website, control
+server-side processing or guarantee unknown endpoints are harmless.
+
+## Optional diagnostics and controls
+
+Starting the temporary selected-tab request log requests optional webRequest
+permission. Each context retains at most ten selected-tab captures of 2,000 rows
+per tab in extension session memory. Rows contain time, hostname, resource type and
+result; paths, credentials, queries, fragments, headers and bodies are excluded.
+Stop, tab closure and browser restart clear them. Session-storage failure stops
+capture with a visible reason. Observation is not native rule attribution.
+Logging permission is not required for ordinary blocking. Logs are excluded from
+backups, private-to-normal transfer, reports and ordinary diagnostics.
+
+Optional contextMenus and notifications permissions enable only their named UI.
+Keyboard commands remain unassigned until configured in Chrome. Optional DNT,
+search-family referrer removal, X-Client-Data removal, literal local-network
+subrequest blocking and the browser-wide WebRTC IP policy are explicit opt-ins.
+Their scope and global recovery are shown in the interface. Filtering pauses
+retain GPC/DNT unless the global signal/protection setting is disabled.
+
+Counters name actual native rule actions or local operations; they are not unique
+ad counts or a retained browsing history. Configuration profiles and QR/settings
+links include persistent settings and can reveal provider/site choices and custom
+list URLs. They are generated locally and shared only by your deliberate action.
+The editable reporting flow redacts again on review; manual export or opening an
+issue draft does not submit it. Review anything you choose to share.
+
+The public distribution repository hosts policy, notices, release metadata and
+complete matching source ZIPs, not personal settings or diagnostics. Chrome Web
+Store delivery requires owner/tester access to a private listing and normal store
+review. HN! does not store store/GitHub publishing credentials in this repository.
+</pre><p>Private Chrome Web Store access is unconfigured.</p><p><a href="https://github.com/Beleg87/HardNo-distribution/releases/download/v0.8.0/hardno-source-0.8.0.zip">Download full corresponding source (ZIP)</a></p></main></body></html>
