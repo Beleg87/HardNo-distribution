@@ -1,0 +1,51 @@
+{
+  "version": "0.8.0",
+  "tag": "v0.8.0",
+  "files": [
+    {
+      "name": "hardno-source-0.8.0.zip",
+      "bytes": 190632423,
+      "sha256": "fcec7e06b4cdbd8214ed3d862ca56bdf8dd1638aff9243e979edf9f66b0c6678",
+      "url": "https://github.com/Beleg87/HardNo-distribution/releases/download/v0.8.0/hardno-source-0.8.0.zip"
+    },
+    {
+      "name": "hardno-source-0.8.0.zip.sha256",
+      "bytes": 91,
+      "sha256": "85dc8481edeb66f16bc6f03262dd8c1a06d7d9c5e6cbf691303fd332b1cf0481",
+      "url": "https://github.com/Beleg87/HardNo-distribution/releases/download/v0.8.0/hardno-source-0.8.0.zip.sha256"
+    },
+    {
+      "name": "hardno-0.8.0-validation.json",
+      "bytes": 52361,
+      "sha256": "085ce2b00afc0de0a1a330a538115576d0eb1c2d2335ab72a93a848c33642b79",
+      "url": "https://github.com/Beleg87/HardNo-distribution/releases/download/v0.8.0/hardno-0.8.0-validation.json"
+    },
+    {
+      "name": "hardno-0.8.0-source-validation.json",
+      "bytes": 19284,
+      "sha256": "af8c83141a607a33c12146960b975fe8d9c2c24ea27ad2fb1a4b0272758efad2",
+      "url": "https://github.com/Beleg87/HardNo-distribution/releases/download/v0.8.0/hardno-0.8.0-source-validation.json"
+    },
+    {
+      "name": "hardno-0.8.0-comparison.json",
+      "bytes": 3616956,
+      "sha256": "f1d2954655a0872f30a9c06a660077ffff0812b0376568e4114a2ee47ac719a9",
+      "url": "https://github.com/Beleg87/HardNo-distribution/releases/download/v0.8.0/hardno-0.8.0-comparison.json"
+    },
+    {
+      "name": "hardno-0.8.0-cosmetic-performance.json",
+      "bytes": 22111,
+      "sha256": "9632c8e467a88f6c159c8799fb96456b8914fda20a338376809d10d9e4f75f4c",
+      "url": "https://github.com/Beleg87/HardNo-distribution/releases/download/v0.8.0/hardno-0.8.0-cosmetic-performance.json"
+    },
+    {
+      "name": "hardno-0.8.0-live-corpus.json",
+      "bytes": 12210354,
+      "sha256": "a12b81d5cb6eb1617f165f2a9c97d14b1fbc9cd5d663b3c334774dae4236427f",
+      "url": "https://github.com/Beleg87/HardNo-distribution/releases/download/v0.8.0/hardno-0.8.0-live-corpus.json"
+    }
+  ],
+  "privacyUrl": "https://beleg87.github.io/HardNo-distribution/privacy.html",
+  "noticesUrl": "https://beleg87.github.io/HardNo-distribution/notices.html",
+  "privateStoreUrl": null
+}
