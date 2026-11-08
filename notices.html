@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Licensing and third-party notices</title><style>body{font:1rem/1.6 system-ui;max-width:76ch;margin:2rem auto;padding:0 1rem}pre{white-space:pre-wrap;overflow-wrap:anywhere}code{overflow-wrap:anywhere}nav a{margin-right:1rem}</style></head><body><nav><a href="index.html">Release</a><a href="privacy.html">Privacy</a><a href="notices.html">Notices</a></nav><main><h1>Licensing and third-party notices</h1><p><a href="https://github.com/Beleg87/HardNo-distribution/releases/download/v0.8.0/hardno-source-0.8.0.zip">Download full corresponding source (ZIP)</a></p><pre># HN! licensing scope and third-party notices
+
+## Original code and ownership
+
+Copyright (C) 2026 Ole Jacob Friberg. Published by Friberg Interactive Studio.
+Eligible original project code is **AGPL-3.0-only**. The complete, unmodified
+[LICENSE](LICENSE) was downloaded from
+&lt;https://www.gnu.org/licenses/agpl-3.0.txt&gt; on 2026-11-08; its SHA256 is
+`0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0`.
+The runtime retains an identical [copy](extension/licenses/AGPL-3.0-only.txt).
+This identifies Friberg Interactive Studio as publisher, not copyright owner.
+Ownership of original code is based on the operator&#39;s express instruction;
+the repository history is not independent evidence of copyright ownership. No contributor copyright or upstream license has been removed.
+Previously distributed releases and their existing grants are not revoked or
+rewritten. Archived dist/ ZIPs remain unchanged by this licensing task.
+
+Original JavaScript, Python, CSS, HTML, batch tools and tests have SPDX notices.
+Comments retain existing descriptions and attributions. JSON metadata is kept
+valid JSON; package.json and its lock root declare AGPL-3.0-only. Generated
+artifacts, node_modules, copied source/data and artwork are excluded from the
+header operation. The generator&#39;s original code can carry AGPL without assigning
+that license to everything it emits.
+
+## Original regional matching
+
+The 0.7.3 Norwegian/Swedish/Danish layer is original AGPL-3.0-only HN! code,
+Copyright 2026 Ole Jacob Friberg, published by Friberg Interactive Studio.
+Its ad labels and publisher markup names are factual interface observations;
+no third-party Nordic filter rules are copied or imported. [Source observations
+and scope](docs/HARDNO_073.md) distinguish known cases from unqualified sites.
+Frellwit&#39;s Swedish GPL filter and the existing licensed global sources remain.
+
+## Copied, derived and separately licensed material
+
+| Material | Existing terms and retained origin | Treatment |
+| --- | --- | --- |
+| NoSchibsGiven 3.0.2 publisher roots and consent compatibility ideas/adaptations | Copyright (c) 2026 evaildev; [MIT notice](extension/licenses/NoSchibsGiven-MIT.txt), [upstream](https://github.com/evaildev/NoSchibsGiven), operator archive SHA256 `a1ba5bb37070926a6e4e54577b9aaa2daeb4ccfd6e5dd70d25b19ff2b5bda196` | MIT text retained unchanged. `extension/sites.js` is copied publisher data; `extension/compat.js` expressly cites this provenance. Copied NoSchibsGiven material keeps MIT terms; original HN! adapter contributions follow the owner&#39;s AGPL-3.0-only grant. No blanket AGPL ownership header is imposed on either mixed/data file. |
+| uBlock Origin Lite procedural runtime and 35 compatibility/media resources | Copyright Raymond Hill and upstream contributors; GPL-3.0-or-later notices remain in the source; [retained GPL text](extension/licenses/GPL-3.0.txt), [runtime/resource pins](extension/vendor/sources.json) | No AGPL header imposed. Existing adaptations and hashes stay recorded; media/binaries keep their upstream terms. |
+| uBlock filtering data | [uAssets](https://github.com/uBlockOrigin/uAssets), selected through uBOL 2026.1103.1743; [data provenance](extension/rules/sources.json) | Existing terms remain. Compiled/generated JSON is not relicensed by the original-code default. |
+| EasyList / EasyPrivacy / EasyList AI Widgets | The EasyList authors (&lt;https://easylist.to/&gt;); [upstream licence](https://easylist.to/pages/licence.html) offers GPL-3.0-or-later or CC-BY-SA-3.0-or-later, subject to file exceptions | GPLv3 option used for the selected material; preserve attribution and inspect any per-file exceptions. |
+| Regional filtering | Frellwit&#39;s Swedish Filter, [GPLv3 license](https://github.com/lassekongo83/Frellwits-filter-lists/blob/master/LICENSE); admitted as `swe-1` through the pinned uBOL release | Replaces custom-licensed Nordic Filters in 0.7.2. The old `nor-0` dataset is excluded from baseline inputs, installed resources and daily update admission. Regional coverage differs; original HN! Norwegian rules and AdGuard protection remain. |
+| Peter Lowe&#39;s list | [Upstream permission](https://pgl.yoyo.org/adservers/): &quot;Feel free to combine this list with yours or lists from other sites and put it up on the web, though!&quot; | The express redistribution permission and Peter Lowe attribution are retained; no AGPL ownership claim is imposed on the list. Exact selected data is retained in the source inputs. |
+| AdGuard filter lists 2, 3, 4, 17, 19, 21 and 22 | Editable snapshots in `src/adguard/baseline` and `src/catalog`; each header links [AdGuardFilters LICENSE](https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE), GPLv3 | Keep source headers, upstream license and content hashes. Do not treat the imported datasets as original AGPL code. |
+| AdGuard engines and bundled dependencies | Versions/licenses in [sources.json](extension/adguard/sources.json); complete retained package notices in [THIRD_PARTY_NOTICES](extension/adguard/THIRD_PARTY_NOTICES.md); tarball-missing notices with provenance in [src/adguard/licenses](src/adguard/licenses/sources.json) | Components remain under their existing GPLv3, MIT, BSD and other stated licenses. The tsurlfilter missing-license fallback uses retained GPL, never the project&#39;s AGPL LICENSE. |
+
+## Compatibility boundary
+
+[GPLv3 Section 13](https://www.gnu.org/licenses/gpl.en.html) and
+[AGPLv3 Section 13](https://www.gnu.org/licenses/agpl-3.0.html) permit combining
+separate GPLv3 and AGPLv3 components while preserving the terms on each part.
+This does not convert upstream GPL code to AGPL or eliminate Corresponding Source
+requirements. The declared MIT/BSD/Apache-2.0/BlueOak licenses are retained;
+alternative permissive grants are used where offered (MIT for WTFPL-or-MIT and
+MIT-or-CC0). No incompatible standard npm license was identified in this
+inventory; that assessment is not a legal certification. Custom-licensed Nordic data is excluded from this release. A list-selection
+marker retires older mixed filter caches without changing login/provider settings.
+
+## Separate assets
+
+The owner confirmed that the HN! logo was created for this project.
+`extension/icons/icon.svg` and its PNG outputs are Copyright (C) 2026 Ole Jacob
+Friberg, published by Friberg Interactive Studio, and separately licensed under
+**CC BY 4.0**. [Artwork attribution](extension/icons/NOTICE.md) and the
+[complete license text](extension/licenses/CC-BY-4.0.txt) ship with the extension.
+The unmodified legal text comes from the SPDX canonical license collection;
+its SHA256 is `d557539df68e771cc1eedcc91d13f70fca930e508d11eedcafa4b15db49e3744`.
+The artwork is not silently assigned the source-code AGPL license, and no
+trademark rights or endorsement are granted.
+
+The uBOL compatibility media retain upstream licenses and provenance. No music
+library, font files or 3D models are bundled. Imported data retain their own
+stated grants. The old Dandelicence text is retained only as historical licensing
+reference; its list data are not included in current runtime/source inputs.
+
+## Distribution and AGPL Section 13
+
+HN! runs locally as a Chrome extension, with no hosted HN! application/backend.
+Provider downloads and the Web Store upload client contact external services;
+they do not provide a network-operated HN! service to remote users.
+`tests/serve-fixtures.js` binds only to 127.0.0.1 as a development fixture.
+There is no deployed remote source-offer endpoint to verify, and this change does
+not claim Section 13 compliance for a future hosted deployment. If a modified
+version is offered for remote interaction, supply and verify a prominent, free
+Corresponding Source offer for that actual version, including combined code.
+
+The complete source package includes HN!&#39;s editable source, scripts, exact filter
+build inputs, all 76 locked npm archives and 11 immutable preferred-form upstream
+source revisions, preserving their licenses. See [source inventory and offline
+rebuild instructions](third_party/README.md). The release extracts the actual
+source ZIP into a fresh directory, refuses missing/corrupt archives, then repairs
+the test copy and rebuilds offline with every runtime byte compared to the release.
+This verifies the delivered package, rather than treating a lockfile or homepage
+as a substitute for source.
+
+When distributing a runtime release, distribute its matching
+`hardno-source-VERSION.zip` with accessible copying facilities. A future Web Store
+listing must link the matching source; no publication or invented public URL is
+performed by this local build. Existing historical ZIPs and grants remain intact.
+
+`npm run check:licenses` and `npm run check:source` verify original-code headers,
+metadata, artwork terms, retained upstream licenses and the complete source
+inventory. `tools/qualify-source.py` verifies the extracted package and offline
+build. These checks do not claim to certify a future hosted service or unknown
+future changes to upstream licenses.
+
+## Locked dependency inventory
+
+The table records every package entry in package-lock.json, including platform
+optional/build/test dependencies. Exact registry URLs and integrity digests are
+retained in that lock. &quot;Bundled&quot; means listed in the actual AdGuard esbuild
+manifest; other entries are not asserted to be shipped runtime code. Per-package
+copyright/license notices remain in the dependencies or retained bundled notices.
+
+| Lockfile location | Version | Declared license | Bundled manifest |
+| --- | --- | --- | --- |
+| `node_modules/@adguard/agtree` | 4.2.1 | MIT | Bundled |
+| `node_modules/@adguard/css-tokenizer` | 1.2.0 | MIT | Bundled |
+| `node_modules/@adguard/dnr-converter` | 2.0.0 | GPL-3.0-only | Bundled |
+| `node_modules/@adguard/extended-css` | 2.2.0 | GPL-3.0 | Bundled |
+| `node_modules/@adguard/logger` | 2.0.1 | MIT | Bundled |
+| `node_modules/@adguard/re2-wasm` | 1.2.0 | Apache-2.0 | Not listed |
+| `node_modules/@adguard/scriptlets` | 2.5.1 | GPL-3.0 | Bundled |
+| `node_modules/@adguard/tsurlfilter` | 6.0.3 | GPL-3.0-only | Bundled |
+| `node_modules/@esbuild/aix-ppc64` | 0.25.12 | MIT | Not listed |
+| `node_modules/@esbuild/android-arm` | 0.25.12 | MIT | Not listed |
+| `node_modules/@esbuild/android-arm64` | 0.25.12 | MIT | Not listed |
+| `node_modules/@esbuild/android-x64` | 0.25.12 | MIT | Not listed |
+| `node_modules/@esbuild/darwin-arm64` | 0.25.12 | MIT | Not listed |
+| `node_modules/@esbuild/darwin-x64` | 0.25.12 | MIT | Not listed |
+| `node_modules/@esbuild/freebsd-arm64` | 0.25.12 | MIT | Not listed |
+| `node_modules/@esbuild/freebsd-x64` | 0.25.12 | MIT | Not listed |
+| `node_modules/@esbuild/linux-arm` | 0.25.12 | MIT | Not listed |
+| `node_modules/@esbuild/linux-arm64` | 0.25.12 | MIT | Not listed |
+| `node_modules/@esbuild/linux-ia32` | 0.25.12 | MIT | Not listed |
+| `node_modules/@esbuild/linux-loong64` | 0.25.12 | MIT | Not listed |
+| `node_modules/@esbuild/linux-mips64el` | 0.25.12 | MIT | Not listed |
+| `node_modules/@esbuild/linux-ppc64` | 0.25.12 | MIT | Not listed |
+| `node_modules/@esbuild/linux-riscv64` | 0.25.12 | MIT | Not listed |
+| `node_modules/@esbuild/linux-s390x` | 0.25.12 | MIT | Not listed |
+| `node_modules/@esbuild/linux-x64` | 0.25.12 | MIT | Not listed |
+| `node_modules/@esbuild/netbsd-arm64` | 0.25.12 | MIT | Not listed |
+| `node_modules/@esbuild/netbsd-x64` | 0.25.12 | MIT | Not listed |
+| `node_modules/@esbuild/openbsd-arm64` | 0.25.12 | MIT | Not listed |
+| `node_modules/@esbuild/openbsd-x64` | 0.25.12 | MIT | Not listed |
+| `node_modules/@esbuild/openharmony-arm64` | 0.25.12 | MIT | Not listed |
+| `node_modules/@esbuild/sunos-x64` | 0.25.12 | MIT | Not listed |
+| `node_modules/@esbuild/win32-arm64` | 0.25.12 | MIT | Not listed |
+| `node_modules/@esbuild/win32-ia32` | 0.25.12 | MIT | Not listed |
+| `node_modules/@esbuild/win32-x64` | 0.25.12 | MIT | Not listed |
+| `node_modules/@types/trusted-types` | 2.0.7 | MIT | Not listed |
+| `node_modules/argparse` | 1.0.10 | MIT | Not listed |
+| `node_modules/argparse/node_modules/sprintf-js` | 1.0.3 | BSD-3-Clause | Not listed |
+| `node_modules/camelcase` | 6.3.0 | MIT | Bundled |
+| `node_modules/camelcase-keys` | 7.0.2 | MIT | Bundled |
+| `node_modules/cidr-regex` | 4.0.3 | BSD-2-Clause | Bundled |
+| `node_modules/cidr-tools` | 6.4.2 | BSD-2-Clause | Bundled |
+| `node_modules/clone-deep` | 4.0.1 | MIT | Bundled |
+| `node_modules/commander` | 12.1.0 | MIT | Not listed |
+| `node_modules/esbuild` | 0.25.12 | MIT | Not listed |
+| `node_modules/esprima` | 4.0.1 | BSD-2-Clause | Not listed |
+| `node_modules/fsevents` | 2.3.2 | MIT | Not listed |
+| `node_modules/glob-to-regexp` | 0.4.1 | BSD-2-Clause | Bundled |
+| `node_modules/ip-bigint` | 7.3.0 | BSD-2-Clause | Bundled |
+| `node_modules/ip-regex` | 5.0.0 | MIT | Bundled |
+| `node_modules/is-cidr` | 4.0.2 | BSD-2-Clause | Bundled |
+| `node_modules/is-cidr/node_modules/cidr-regex` | 3.1.1 | BSD-2-Clause | Not listed |
+| `node_modules/is-cidr/node_modules/ip-regex` | 4.3.0 | MIT | Not listed |
+| `node_modules/is-ip` | 3.1.0 | MIT | Bundled |
+| `node_modules/is-ip/node_modules/ip-regex` | 4.3.0 | MIT | Not listed |
+| `node_modules/is-plain-object` | 2.0.4 | MIT | Bundled |
+| `node_modules/isobject` | 3.0.1 | MIT | Bundled |
+| `node_modules/js-yaml` | 3.15.2 | MIT | Bundled |
+| `node_modules/json5` | 2.2.3 | MIT | Bundled |
+| `node_modules/kind-of` | 6.0.3 | MIT | Bundled |
+| `node_modules/lru-cache` | 11.5.3 | BlueOak-1.0.0 | Bundled |
+| `node_modules/map-obj` | 4.3.0 | MIT | Bundled |
+| `node_modules/playwright` | 1.62.1 | Apache-2.0 | Not listed |
+| `node_modules/playwright-core` | 1.62.1 | Apache-2.0 | Not listed |
+| `node_modules/punycode` | 2.3.1 | MIT | Bundled |
+| `node_modules/quick-lru` | 5.1.1 | MIT | Bundled |
+| `node_modules/shallow-clone` | 3.0.1 | MIT | Bundled |
+| `node_modules/spark-md5` | 3.0.2 | (WTFPL OR MIT) | Bundled |
+| `node_modules/sprintf-js` | 1.1.3 | BSD-3-Clause | Bundled |
+| `node_modules/string-natural-compare` | 3.0.1 | MIT | Bundled |
+| `node_modules/tldts` | 5.7.112 | MIT | Bundled |
+| `node_modules/tldts-core` | 5.7.112 | MIT | Bundled |
+| `node_modules/type-fest` | 1.4.0 | (MIT OR CC0-1.0) | Not listed |
+| `node_modules/valibot` | 1.5.0 | MIT | Bundled |
+| `node_modules/zod` | 4.6.7 | MIT | Bundled |
+| `node_modules/zod-validation-error` | 5.0.0 | MIT | Bundled |
+
+## QR transfer in 0.8.0
+
+qrcode-generator 2.0.4, Copyright Kazuhiko Arase, MIT. The exact upstream
+license and immutable preferred source are retained; no AGPL header is imposed.
+
+| `node_modules/qrcode-generator` | 2.0.4 | MIT |
+
+## 0.8 catalogue source retention
+
+All 15 catalogue inputs, including optional annoyance/social/widget/AI lists, retain
+their upstream file headers, exact bytes, SHA256, source URL and selected GPL grant
+in `src/catalog` and `extension/catalog/baseline.json`. Custom subscriptions are user
+choices and are not silently assigned HN! ownership. Admitted cookie-notice actions
+do not establish consent refusal; consent/storage setters remain excluded.
+</pre></main></body></html>
